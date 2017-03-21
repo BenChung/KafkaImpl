@@ -15,6 +15,7 @@ case class SetField(receiver: Expr, name : String, value : Expr) extends Expr {}
 case class Call(receiver: Expr, method : String, argT : Type, resT : Type, arg : Expr) extends Expr {}
 case class DynCall(receiver: Expr, method: String, arg: Expr) extends Expr {}
 case class SubCast(tpe: Type, receiver: Expr) extends Expr {}
+case class Sequence(exprs : List[Expr]) extends Expr {}
 
 sealed trait Md {}
 case class MethodDef(name:String, variable: String, varType: Type, retType: Type, body:Expr) extends Md {}
