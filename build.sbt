@@ -1,4 +1,4 @@
-name := "untitled"
+name := "kafkaimpl-build"
 
 version := "1.0"
 
